@@ -1,0 +1,66 @@
+body{
+  background-color: plum;
+  overflow: hidden;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+select{
+  appearance: none;
+  position: absolute;
+  top: 18vh;
+  display: flex;
+  width: 16vw;
+  height: 6vh;
+  font-size: 5.1vh;
+  border: none;
+  outline: none;
+  background: url("images/arrow.png") no-repeat right center, url("images/arrow.png") no-repeat left center;
+  background-color: plum;
+  background-size: contain;
+}
+
+select:hover{
+  cursor: pointer;
+}
+
+.loading{
+  animation: rotate 1400ms linear infinite;
+  mix-blend-mode: soft-light;
+  width: 30vh;
+  height: 30vh;
+  margin: 0;
+  position: absolute;
+  border-radius: 50%;
+  border: 3vh solid transparent;
+  border-top: 3vh solid coral;
+}
+
+.loading1{
+  animation: rotate 1800ms linear infinite;
+  border-top: 3vh solid lightgreen;
+}
+
+.loading3{
+  animation: rotate 2200ms linear infinite;
+  border-top: 3vh solid lightblue;
+}
+
+@keyframes rotate{
+  from{ transform: rotate(0);}
+  to{ transform: rotate(360deg);}
+}
+
+.following{
+  position: absolute;
+  width: 20vh;
+  height: 20vh;
+  background-color: saddlebrown;
+}
