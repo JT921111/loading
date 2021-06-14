@@ -17,12 +17,12 @@ select{
   position: absolute;
   top: 18vh;
   display: flex;
-  width: 16vw;
-  height: 6vh;
+  width: 9vw;
+  height: 9vh;
   font-size: 5.1vh;
   border: none;
   outline: none;
-  background: url("images/arrow.png") no-repeat right center, url("images/arrow.png") no-repeat left center;
+  background: url("images/arrow.png") no-repeat center center;
   background-color: plum;
   background-size: contain;
 }
@@ -53,9 +53,27 @@ select:hover{
   border-top: 3vh solid lightblue;
 }
 
+.loading-text{
+  animation: sparkle 2000ms ease infinite;
+  position: absolute;
+  font-size: 6vh;
+}
+
 @keyframes rotate{
   from{ transform: rotate(0);}
   to{ transform: rotate(360deg);}
+}
+
+@keyframes sparkle{
+  0%, 100%{
+    opacity: 1;
+  }
+  25%, 75%{
+    opacity: 0.5;
+  }
+  50%{
+    opacity: 0.1;
+  }
 }
 
 .following{
